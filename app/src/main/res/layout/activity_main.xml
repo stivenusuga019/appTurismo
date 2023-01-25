@@ -5,31 +5,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/editar"
+    tools:context=".MainActivity"
+    >
 
-    <View
-        android:id="@+id/caja1"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:background="@color/red"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageButton
+        android:id="@+id/iconohotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/iconorestaurante"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0" />
+        android:src="@drawable/hotel"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.2"
+        android:padding="1dp"/>
 
-
-    <View
-        android:id="@+id/caja2"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:background="@color/blue"
+    <TextView
+        android:id="@+id/hotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/hotel"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/iconohotel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintVertical_bias="0.308" />
+
+    <ImageButton
+        android:id="@+id/iconorestaurante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/caja1"
-        app:layout_constraintVertical_bias="0" />
+        app:layout_constraintTop_toBottomOf="@id/iconohotel"
+        android:src="@drawable/restaurante"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.05"
+        android:padding="1dp"/>
+    <TextView
+        android:id="@+id/restaurantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restautante"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iconorestaurante"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.1500"
+        app:layout_constraintVertical_bias="0.692" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

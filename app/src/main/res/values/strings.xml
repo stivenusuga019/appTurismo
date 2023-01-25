@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">HolaComfama</string>
+
+    <string name="hotel">Hoteles</string>
+    <string name="restautante">Restaurantes</string>
+
+    <string name="creador">Acerca de</string>
+    <string name="ingles">Ingles</string>
+    <string name="español">Español</string>
 </resources>
