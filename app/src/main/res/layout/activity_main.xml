@@ -42,6 +42,7 @@
         android:layout_height="93dp"
         android:padding="1dp"
         android:src="@drawable/guacamayo"
+        android:onClick="pajaros"
         app:layout_constraintBottom_toTopOf="@id/iconorestaurante"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
