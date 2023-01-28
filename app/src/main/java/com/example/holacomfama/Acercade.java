@@ -10,6 +10,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import java.util.Locale;
 
@@ -24,6 +25,10 @@ public class Acercade extends AppCompatActivity {
         //Cambiando el color de la barra
         ColorDrawable colorBarra= new ColorDrawable(Color.parseColor("#D81B41"));
         barra.setBackgroundDrawable(colorBarra);
+    }
+    public void  salir(View view){
+        Intent salir1 = new Intent(Acercade.this,MainActivity.class);
+        startActivity(salir1);
     }
     public void cambiarIdioma(String idioma){
 

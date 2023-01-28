@@ -7,6 +7,22 @@
     android:background="@drawable/fondo"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="477dp"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        android:paddingLeft="40dp"
+        android:text="@string/titulo"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
     <ImageButton
         android:id="@+id/iconohotel"
         android:layout_width="93dp"
@@ -18,7 +34,7 @@
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.26" />
 
     <TextView
         android:id="@+id/hotel"
@@ -31,18 +47,18 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintHorizontal_bias="0.187"
         app:layout_constraintStart_toEndOf="@id/iconohotel"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.150" />
+        app:layout_constraintVertical_bias="0.189" />
 
     <ImageButton
         android:id="@+id/iconopajaros"
         android:layout_width="93dp"
         android:layout_height="93dp"
+        android:onClick="pajaros"
         android:padding="1dp"
         android:src="@drawable/guacamayo"
-        android:onClick="pajaros"
         app:layout_constraintBottom_toTopOf="@id/iconorestaurante"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"

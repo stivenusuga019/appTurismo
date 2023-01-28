@@ -19,10 +19,11 @@
     <string name="celular">+57 3246756251</string>
 
     <string name="ave1">Paloma de luto - El gentil pájaro cantor</string>
-    <string name="des">Leer Mas</string>
     <string name="ave2">Cardenal del Norte - El ave de jardín más común del norte de EE. UU.</string>
     <string name="ave3">Petirrojo americano - El pájaro más común del patio trasero durante el verano</string>
     <string name="ave4">Cuervo americano - El depredador negro</string>
+    <string name="salir" >Salir</string>
+    <string name="titulo">Explora Jardin Tu Pueblo</string>
 
 
 

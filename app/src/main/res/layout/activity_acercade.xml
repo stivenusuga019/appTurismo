@@ -66,16 +66,16 @@
         android:id="@+id/contactos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         android:paddingLeft="15dp"
         android:text="@string/Contatos"
         android:textColor="@color/black"
         android:textSize="25dp"
-        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/descripción"
-        app:layout_constraintVertical_bias="0.078" />
+        app:layout_constraintVertical_bias="0.024" />
 
     <TextView
         android:id="@+id/Email"
@@ -106,20 +106,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Email"
         app:layout_constraintVertical_bias="0.100" />
+
     <TextView
         android:id="@+id/Celular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
         android:text="@string/Celular"
         android:textColor="@color/black"
         android:textSize="30dp"
-        android:paddingLeft="10dp"
-        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/email"
-        app:layout_constraintVertical_bias="0.100" />
+        app:layout_constraintVertical_bias="0.103" />
 
     <TextView
         android:id="@+id/celular"
@@ -136,4 +138,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Celular"
         app:layout_constraintVertical_bias="0.246" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="61dp"
+        android:backgroundTint="@color/red"
+        android:onClick="salir"
+        android:text="@string/salir"
+        app:cornerRadius="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.994" />
 </androidx.constraintlayout.widget.ConstraintLayout>

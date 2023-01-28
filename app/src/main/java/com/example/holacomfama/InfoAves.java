@@ -10,6 +10,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import java.util.Locale;
@@ -46,6 +47,10 @@ public class InfoAves extends AppCompatActivity {
         getBaseContext().getResources().updateConfiguration(configurationTelefono,getBaseContext().getResources().getDisplayMetrics());
 
     }
+    public void  salir(View view){
+        Intent salir1 = new Intent(InfoAves.this,MainActivity.class);
+        startActivity(salir1);
+    }
 
     //DAR funcionamiento al menu
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -56,7 +61,8 @@ public class InfoAves extends AppCompatActivity {
         switch (itemSeleccionado){
 
             case(R.id.opcion1):
-                Toast.makeText(this, "Selecionaste Acerca De", Toast.LENGTH_SHORT).show();
+              Intent intent = new Intent(InfoAves.this,Acercade.class);
+              startActivity(intent);
                 break;
             case(R.id.opcion2):
                 this.cambiarIdioma("en");

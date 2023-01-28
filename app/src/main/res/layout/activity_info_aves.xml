@@ -117,6 +117,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.892" />
 
+    <Button
+        android:layout_width="87dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/red"
+        android:onClick="salir"
+        android:text="@string/salir"
+        app:cornerRadius="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.994" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
